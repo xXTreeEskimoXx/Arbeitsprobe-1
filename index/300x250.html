@@ -1,0 +1,275 @@
+
+<!-- saved from url=(0059)https://www.instant-gaming.com/affgames/igr3098305/300x250? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./548e8d9732"></script><script src="./nr-1210.min.js.Download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"548e8d9732",applicationID:"6048502"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<style>
+			body { padding: 0; margin: 0; background: none transparent; font-family: Arial,Helvetica,sans-serif; }
+			.fadein { position:relative; height:250px; width:300px; overflow: hidden; }
+			.fadein div { position:absolute; left:0; top:0; cursor: pointer; }
+			a, a:hover, a:visited { color: #8a8a8a; text-decoration: none; }
+			.ig-preorders-button {
+				display: inline-block;
+				vertical-align: bottom;
+				background: #ff8500;
+				background: -moz-linear-gradient(top,  #ff8500 0%, #ff5400 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8500), color-stop(100%,#ff5400));
+				background: -webkit-linear-gradient(top,  #ff8500 0%,#ff5400 100%);
+				background: -o-linear-gradient(top,  #ff8500 0%,#ff5400 100%);
+				background: -ms-linear-gradient(top,  #ff8500 0%,#ff5400 100%);
+				background: linear-gradient(to bottom,  #ff8500 0%,#ff5400 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8500', endColorstr='#ff5400',GradientType=0 );
+				height: 18px;
+				padding: 4px 10px 0px 10px;
+				color: white;
+				text-shadow: 1px 1px #bd3e00;
+				font-size: 11px;
+				font-weight: bold;
+				border: 1px solid #a53600;
+				border-radius: 3px 3px 3px 3px;
+			}
+			.ig-preorders-button:hover {
+				background: #fed500;
+				background: -moz-linear-gradient(top,  #fed500 0%, #ffa605 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fed500), color-stop(100%,#ffa605));
+				background: -webkit-linear-gradient(top,  #fed500 0%,#ffa605 100%);
+				background: -o-linear-gradient(top,  #fed500 0%,#ffa605 100%);
+				background: -ms-linear-gradient(top,  #fed500 0%,#ffa605 100%);
+				background: linear-gradient(to bottom,  #fed500 0%,#ffa605 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed500', endColorstr='#ffa605',GradientType=0 );
+				border: 1px solid #d79300;
+				text-shadow: 1px 1px rgb(165, 113, 0);
+			}
+			.ig-preorders-button-buy:hover {
+				background: #afcf00; /* Old browsers */
+				background: -moz-linear-gradient(top,  #afcf00 0%, #4b8b00 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#afcf00), color-stop(100%,#4b8b00)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #afcf00 0%,#4b8b00 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #afcf00 0%,#4b8b00 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #afcf00 0%,#4b8b00 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #afcf00 0%,#4b8b00 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afcf00', endColorstr='#4b8b00',GradientType=0 ); /* IE6-9 */
+				border: 1px solid #5d7800;
+				text-shadow: 1px 1px #5d7800;
+			}
+			.promo-banner {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				background: #ff5400;
+				color: white;
+				width: 130px;
+				margin-left: -75px;
+				border-radius: 0 0 5px 5px;
+				padding: 3px 10px 5px;
+				font-size: 11px;
+				font-weight: bold;
+				box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+				text-align: center;
+			}
+			@keyframes blink {  
+			    0% { color: #FF5400; }
+			    100% { color: white; }
+			}
+			@-webkit-keyframes blink {
+			    0% { color: #FF5400; }
+			    100% { color: white; }
+			}
+			.blink {
+			    -webkit-animation: blink 0.5s linear infinite;
+			    -moz-animation: blink 0.5s linear infinite;
+			    animation: blink 0.5s linear infinite;
+			} 
+			#ig-promo-counter span {
+				font-size: 9px;
+			}
+			#g-334 { margin-top: -205px !important }
+#g-401 { margin-top: -123px !important }
+#g-252 { margin-top: -44px !important }
+#g-451 { margin-top: -183px !important }
+#g-183 { margin-top: -73px !important }
+#g-186 { margin-top: -67px !important }
+.overlay {
+  position: absolute;
+  left:0;
+  right:0;
+  bottom: 0;
+  height: 54px;
+  background: white;
+  text-align: right;
+  padding: 10px 15px;
+  box-shadow: 0px -8px 50px rgba(0,0,0,1);
+}
+
+.overlay img { position: absolute; top: -9px; left: 5px; }
+.overlay .gtext, .overlay .gtext2 {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  text-align: right;
+}
+.gname {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(255,255,255,0.3);
+}
+.gplat {
+  font-size: 11px;
+  margin-bottom: 7px;
+  line-height: 11px;
+}
+.price {
+  display: inline-block;
+  color: #ff5400;
+  margin-right: 5px;
+}
+.gactions {
+  font-size: 16px;
+  font-weight: bold
+}
+.discount {
+  font-size: 13px;
+  display: inline-block;
+  background-color: #95c33b;
+  padding: 2px 5px;
+  color: white;
+  text-shadow: 1px 1px #5d7800;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+		</style>
+</head>
+<body>
+<a href="https://www.instant-gaming.com/de/652-kaufen-spiel-playstation-playstation-store-guthaben-aufstockung-20e/?igr=3098305&amp;r_url=https%3A%2F%2Fguildnews.de%2F" target="_blank">
+<div class="fadein">
+
+
+
+<div style="" id="panel_652" data-pid="652" data-uri="https://www.instant-gaming.com/de/652-kaufen-spiel-playstation-playstation-store-guthaben-aufstockung-20e/">
+<img src="./playstation-store-guthaben-aufstockung-20e-cover.jpg" title="PlayStation Store Guthaben-Aufstockung 20€" id="g-652" class="jacket" width="300" style="margin-top: -13.93784302583px">
+</div>
+<div style="display: none" id="panel_4211" data-pid="4211" data-uri="https://www.instant-gaming.com/de/4211-kaufen-spiel-rockstar-grand-theft-auto-v-premium-online-edition/">
+<img src="./grand-theft-auto-v-premium-online-edition-cover.jpg" title="Grand Theft Auto V: Premium Online Edition" id="g-4211" class="jacket" width="300">
+</div>
+<div style="display: none" id="panel_8968" data-pid="8968" data-uri="https://www.instant-gaming.com/de/8968-kaufen-spiel-origin-die-sims-4-landhaus-leben/">
+<img src="./die-sims-4-landhaus-leben-cover.jpg" title="Die Sims 4 Landhaus-Leben" id="g-8968" class="jacket" width="300" style="margin-top: -0.66562062730627px">
+</div>
+<div style="display: none" id="panel_937" data-pid="937" data-uri="https://www.instant-gaming.com/de/937-kaufen-spiel-steam-kyn/">
+<img src="./kyn-cover.jpg" title="Kyn" id="g-937" class="jacket" width="300">
+<span class="promo-banner"><span class="blink">PROMOS OF THE WEEK !</span><br><span id="ig-promo-counter">07:25<span>:36</span></span></span>
+</div>
+<div style="display: none" id="panel_7011" data-pid="7011" data-uri="https://www.instant-gaming.com/de/7011-kaufen-spiel-uplay-anno-history-collection/">
+<img src="./anno-history-collection-cover.jpg" title="Anno History Collection" id="g-7011" class="jacket" width="300">
+<span class="promo-banner"><span class="blink">PROMOS OF THE WEEK !</span><br><span id="ig-promo-counter"></span></span>
+</div>
+<div style="display: none" id="panel_1028" data-pid="1028" data-uri="https://www.instant-gaming.com/de/1028-kaufen-spiel-steam-7-days-to-die-early-access/">
+<img src="./7-days-to-die-early-access-cover.jpg" title="7 Days to Die (Early Access)" id="g-1028" class="jacket" width="300">
+<span class="promo-banner"><span class="blink">PROMOS OF THE WEEK !</span><br><span id="ig-promo-counter"></span></span>
+</div>
+<div style="display: none;" id="panel_9060" data-pid="9060" data-uri="https://www.instant-gaming.com/de/9060-kaufen-spiel-steam-orcs-must-die-3/">
+<img src="./orcs-must-die-3-cover.jpg" title="Orcs Must Die! 3" id="g-9060" class="jacket" width="300" style="margin-top: -2.0000462103321px">
+</div><div style="display: none;" id="panel_1904" data-pid="1904" data-uri="https://www.instant-gaming.com/de/1904-kaufen-spiel-steam-dead-by-daylight/">
+<img src="./dead-by-daylight-cover.jpg" title="Dead by Daylight" id="g-1904" class="jacket" width="300" style="margin-top: -39.208973800738px">
+</div><div style="display: none;" id="panel_9127" data-pid="9127" data-uri="https://www.instant-gaming.com/de/9127-kaufen-spiel-steam-tribes-of-midgard/">
+<img src="./tribes-of-midgard-cover.jpg" title="Tribes of Midgard" id="g-9127" class="jacket" width="300" style="margin-top: -2.0000462103321px">
+</div></div>
+<div class="overlay">
+<img src="./ig-button-squared.png">
+<div class="gtext2" style="display: none;">
+<div class="gname">Tribes of Midgard</div>
+<div class="gplat"><span>Steam</span></div>
+<div class="gactions">
+<span class="discount">-35%</span>
+<span class="price">12.99€</span>
+<div class="ig-preorders-button ig-preorders-button-buy">Kaufen</div>
+</div>
+</div>
+<div class="gtext" style="display: block;">
+<div class="gname">PlayStation Store ...</div>
+<div class="gplat"><span>Playstation</span></div>
+<div class="gactions">
+<span class="discount">-10%</span>
+<span class="price">17.99€</span>
+<div class="ig-preorders-button ig-preorders-button-buy">Kaufen</div>
+</div>
+</div>
+</div>
+</a>
+<script src="./jquery.min.js.Download"></script>
+<script>
+		$(function() {
+			var referrer = (window.location != window.parent.location) ? document.referrer : document.location;
+			$('a').click(function() {
+				var date = new Date();
+				date.setTime(date.getTime() + (3600*24));
+				document.cookie = 'r_ref=' + referrer + '; expires=' + date.toUTCString() + '; path=/';
+				return true;
+			});
+			function fillGtext(prod, ctn) {
+				var $ctn = $(ctn);
+				$('a').attr('href', $('#panel_' + prod.prod_id).data('uri') + '?igr=3098305&r_url=' + encodeURIComponent(referrer));
+				$ctn.find('.gname').text(prod.name.length > 19 ? prod.name.substr(0,18) + '...' : prod.name);
+				$ctn.find('.gplat span').text(prod.type);
+				$ctn.find('.discount').text('-' + prod.discount + '%');
+				$ctn.find('.price').text(prod.price + '€');
+				if (prod.preorder == 1) {
+					$ctn.find('.ig-preorders-button').removeClass('ig-preorders-button-buy').text('Vorbestellen');
+				} else {
+					$ctn.find('.ig-preorders-button').addClass('ig-preorders-button-buy').text('Kaufen');
+				}
+			}
+			var products = {"9060":{"category":"[1,4,32,17,24,53,47,24]","prod_id":"9060","type":"Steam","price":"9.89","discount":"60","retail":"24.99","p_edition_id":"1","avail_date":"1626998400","preorder":"0","thumbzone":"0.479233","is_dlc":"0","ean":null,"brand":"Robot Entertainment","name":"Orcs Must Die! 3","small_name":"Orcs Must Die! 3","seo_name":"orcs-must-die-3","description":"Orcs Must Die! 3 bietet Orkgemetzel in einem noch nie dagewesenen Ausma\u00df. Bewaffne dich allein oder mit Freunden mit vielerlei Fallen und Waffen. Zerst\u00fcckle, verbrenne, schleudere und elektrisiere in diesem lang erwarteten Nachfolger der preisgekr\u00f6nten Serie Horden abscheulicher Orks.<br \/>\r\n<br \/>\r\nIn den neuen Kriegsszenarien trittst du gegen die gr\u00f6\u00dften Ork-Armeen an, die jemals versammelt wurden. Steuerbare Kriegsmaschinen geben den Spielern die notwendige Feuerkraft, um die abscheulichen Eindringlinge durch die Gegend zu schleudern, aufzuspie\u00dfen, zu verkohlen und zu zerst\u00fcckeln.<br \/>\r\n<br \/>\r\n<strong>Einfach mehr von allem<\/strong> \u2013 Orcs Must Die! 3 bietet alles, was die Fans an den ersten beiden Spielen geliebt haben, und noch mehr. Mehr Orks, mehr Fallen, mehr Waffen, mehr Verbesserungen \u2013 und alles sieht besser aus als je zuvor. Kurz gesagt, mehr geht fast nicht.<br \/>\r\n<br \/>\r\n<strong>Neue Story<\/strong> \u2013 Erlebe eine brandneue Geschichte, die mehr als 20 Jahre nach Orcs Must Die! 2 spielt \u2013 in einer Zeit, in welcher der Kriegsmagier und die Zauberin den Orden wiederaufgebaut und neue junge Lehrlinge ausgebildet haben.<br \/>\r\n<br \/>\r\n<strong>Kriegsszenarien<\/strong> \u2013 Die komplett neuen Kriegsszenarien kn\u00fcpfen an das gewaltige Ausma\u00df von Orcs Must Die an. Drau\u00dfen auf den Schlachtfeldern rund um die Burgen stehen \u00fcberw\u00e4ltigende Orkarmeen. D\u00fcnne die Wellen aus Hunderten Orks aus, bevor sie die Mauern durchbrechen und deinen Riss zerst\u00f6ren.<br \/>\r\n<br \/>\r\n<strong>Kriegsmaschinen<\/strong> \u2013 Um mit diesen Horden fertigzuwerden, wirst du neue Waffen des Todes und der Zerst\u00f6rung brauchen. Kriegsmaschinen sind im Grunde \u00fcberdimensionierte Fallen. Platziere deine gewaltige Schleuderfalle und lass Dutzende angreifende Orks durch die Luft fliegen. Mach deinen Megaexplosionsfasswerfer scharf und sorge f\u00fcr pyrotechnische Glorie.<br \/>\r\n<br \/>\r\n<strong>Es h\u00f6rt nie auf<\/strong> \u2013 Die anst\u00fcrmenden Orklegionen lassen auch nach der Story nicht nach. Verewige deinen Namen durch w\u00f6chentliche Herausforderungen in der Orkt\u00f6ter-Ruhmeshalle oder finde heraus, wie lange du im Endlos-Modus \u00fcberleben kannst.<br \/>\r\n<br \/>\r\n<strong>Setze drastische Schritte<\/strong> \u2013 Orcs Must Die! 3 beinhaltet die kostenlose Kampagne \u201eDrastic Steps\u201c inklusive fliegender Feinde, heroischer Kriegsw\u00e4chter und nat\u00fcrlich noch mehr Werkzeuge zur Orkvernichtung!<br \/>\r\n<br \/>\r\n<strong>Werde ein \u00dcberlebensk\u00fcnstler<\/strong> \u2013 Im neuen Chaos-Modus trittst du gegen b\u00f6se Orks an, die immer st\u00e4rker werden und einige fiese Tricks auf Lager haben. Mit jedem Level, das du \u00fcberlebst, erh\u00e4ltst du eigene Modifikatoren, um zur\u00fcckzuschlagen!","platforms":"1,13","platform":"Steam","movement":1},"1904":{"category":"[\"1\",\"24\",\"23\",\"17\"]","prod_id":"1904","type":"Steam","price":"4.95","discount":"75","retail":"19.99","p_edition_id":"1","avail_date":"1465862400","preorder":"0","thumbzone":"9.3949","is_dlc":"0","ean":null,"brand":"Starbreeze Publishing AB","name":"Dead by Daylight","small_name":"DbD","seo_name":"dead-by-daylight","description":"Dead by Daylight f\u00fcr PC ist ein Survival-Horror-Spiel von Behavior Interactive. <br \/>\r\n<br \/>\r\n<h2>\u00dcber das Spiel<\/h2><br \/>\r\nGrunds\u00e4tzlich gibt es zwei M\u00f6glichkeiten: Vier Online-Spieler k\u00e4mpfen gemeinsam gegen einen einzigen Killer, auch einen Online-Spieler. So kannst Du der M\u00f6rder sein oder einer der vier, die gegen ihn oder sie arbeiten.<br \/>\r\n<br \/>\r\n<h3>B\u00f6sartige B\u00f6sewichte<\/h3><br \/>\r\nEs gibt eine Reihe von originellen B\u00f6sewichten, mit denen man sich messen oder mit denen man spielen kann, und es gibt eine Reihe von Charakteren zum Herunterladen aus der Popkultur, wie Leatherface von The Texas Chainsaw Massacre, Freddy Krueger von Nightmare in der Elm Street, John Kramer von Saw, Evil Ash von EvilDead und der Scream-Killer aus dem Scream-Film-Franchise.<br \/>\r\n<br \/>\r\nEs gibt 16 originale M\u00f6rder, meistens mit einem Wort, dem das Wort \"the\" vorangestellt ist: \"The Nurse\", \"The Clown\", \"The Trapper\", wobei nur \"The Ghost Face\" ein Adjektiv hat.<br \/>\r\n<br \/>\r\nDie B\u00f6sewichte sind eintaktig und laufen nur m\u00e4\u00dfig schnell. Dies ist jedoch etwas schneller, als es die Opfer k\u00f6nnen. In einem direkten Rennen werden die B\u00f6sewichte immer gewinnen. Schurken m\u00fcssen ihre Beute zweimal schlagen, einmal, um sie zu verletzen und zu verlangsamen, ein zweites Mal, um sie vollst\u00e4ndig au\u00dfer Gefecht zu setzen. Verletzte Spieler k\u00f6nnen leichter gefangen werden, wenn sie versuchen, dem M\u00f6rder auszuweichen, w\u00e4hrend diejenigen mit voller St\u00e4rke besser widerstehen und schneller ausweichen k\u00f6nnen.<br \/>\r\n<br \/>\r\n<h3>\u00dcberlebenstaktik<\/h3><br \/>\r\nEs gibt insgesamt siebzehn \u00dcberlebende, die die vier kooperativen Spieler ausw\u00e4hlen k\u00f6nnen. Die Vielfalt ist einigerma\u00dfen gut, da die meisten Menschen Avatare ausw\u00e4hlen k\u00f6nnen, die ihrem bevorzugten Aussehen entsprechen. Da die B\u00f6sewichte den \u00dcberlebenden geradewegs entkommen k\u00f6nnen, m\u00fcssen die \u00dcberlebenden ein wenig erfinderisch sein, um zu entkommen. Sie m\u00fcssen eine festgelegte Anzahl von Generatoren festlegen (normalerweise f\u00fcnf, eine f\u00fcr jeden Spieler, einschlie\u00dflich des Killers), um die Tore zu bestimmen, durch die sie frei werden.<br \/>\r\n<br \/>\r\nEin alternativer Fluchtweg besteht darin, eine Notluke zu erreichen, die sich automatisch \u00f6ffnet, wenn nur noch ein \u00dcberlebender \u00fcbrig ist. Mehr als ein \u00dcberlebender bedeutet, dass f\u00fcr die Luke ein Schl\u00fcssel gefunden und verwendet werden muss, wenn dieses Fluchtmittel verwendet werden soll.<br \/>\r\n<br \/>\r\nDie Bewegungen der Spieler sind mit zwei Schritten ziemlich unterschiedlich: Gehen und Sprinten, obwohl der Sprint, wie oben erw\u00e4hnt, immer noch etwas langsamer ist als die eintaktige Gangart des B\u00f6sewichts. Die Spieler k\u00f6nnen auch hocken und kriechen, was sich als n\u00fctzlich erweist, wenn sie versuchen, dem M\u00f6rder aus dem Blickfeld zu entgehen.<br \/>\r\n<br \/>\r\nDie Spieler k\u00f6nnen den B\u00f6sewichten nicht entkommen und m\u00fcssen entweder vor dem Erkennen oder w\u00e4hrend einer Verfolgungsjagd au\u00dfer Sichtweite ausweichen, solange der B\u00f6sewicht noch weit genug entfernt ist, um umgangen zu werden.<br \/>\r\n<br \/>\r\n<h3>Halte Deine Augen offen<\/h3><br \/>\r\nAu\u00dfer nach dem B\u00f6sewicht Ausschau zu halten (wenn Du als B\u00f6sewicht spielst, hast Du nur eine Aufgabe: Finde die \u00dcberlebenden und \u00e4ndere diesen Status!), \u00dcberlebende sollten die folgenden n\u00fctzlichen Gegenst\u00e4nde im Auge behalten:<br \/>\r\n<br \/>\r\n<li>Taschenlampen - strahlt dem M\u00f6rder eine Taschenlampe in die Augen, die ihn f\u00fcr einen Moment blendet und es \u00dcberlebenden erm\u00f6glicht, einen gefangenen Kumpel zu retten, bevor der B\u00f6sewicht ihn oder sie opfern kann.<\/li><br \/>\r\n<li>Med-Kits - Erste-Hilfe-Kits, mit denen \u00dcberlebende sich selbst heilen k\u00f6nnen, ohne darauf warten zu m\u00fcssen, dass ein Freund kommt und sie heilt.<\/li><br \/>\r\n<li> Werkzeugk\u00e4sten - k\u00f6nnen verwendet werden, um die Fleischhaken zu sabotieren, an denen der B\u00f6sewicht seine K\u00f6rper zeigt, und sie k\u00f6nnen auch harmlos B\u00e4renfallen federn, wodurch der Bereich f\u00fcr \u00dcberlebende sicher wird.<\/li><br \/>\r\n<li>Karten - Mit diesen n\u00fctzlichen Werkzeugen kann man Objekte verfolgen und leichter finden.<\/li><br \/>\r\n<li>Paletten - Diese massiven Holzkisten k\u00f6nnen auf dem Boden stehen und von einem \u00dcberlebenden auf den B\u00f6sewicht fallen gelassen werden, wodurch er oder sie f\u00fcr einen Moment bet\u00e4ubt wird, sodass der \u00dcberlebende weiterkommen und versuchen kann, einen Ort zu finden, an dem er sich niederlegen kann.<\/li><br \/>\r\nDead by Daylight f\u00fcr PC ist bei Instant Gaming zum Bruchteil des Verkaufspreises erh\u00e4ltlich. Du erh\u00e4ltst einen offiziellen Schl\u00fcssel und kannst das Spiel sofort spielen. Play smart. Pay less. ","platforms":"1,13","platform":"Steam","movement":1},"9127":{"category":"[\"1\",\"4\",\"24\",\"32\",\"11\"]","prod_id":"9127","type":"Steam","price":"12.99","discount":"35","retail":"19.99","p_edition_id":"1","avail_date":"1627344000","preorder":"0","thumbzone":"0.479233","is_dlc":"0","ean":null,"brand":"Gearbox Publishing ","name":"Tribes of Midgard","small_name":"Tribes of Midgard","seo_name":"tribes-of-midgard","description":"Nehmt euch in Acht, die Riesen sind im Anmarsch!<br \/>\r\nMidgard wird von allen Seiten belagert.<br \/>\r\nSagenhafte Kreaturen, t\u00f6dliche Geister und riesige Unget\u00fcme drohen, Ragnar\u00f6k auszul\u00f6sen\u00a0\u2013 das Ende der Welt!\u00a0<br \/>\r\n<br \/>\r\nJetzt liegt es an euch, den m\u00e4chtigen Einherjar, euer Festmahl in Walhalla zu unterbrechen, um nach Midgard zur\u00fcckzukehren.<br \/>\r\nWerdet zum ultimativen Wikinger und \u00fcberlebt und entwickelt euch weiter, um euer Dorf\u00a0\u2013 und die ganze Welt\u00a0\u2013 vor der v\u00f6lligen Zerst\u00f6rung zu bewahren.<br \/>\r\nGl\u00fccklicherweise seid ihr auf diesem Abenteuer nicht allein unterwegs: Euer (gr\u00f6\u00dftenteils) furchtloser Stamm aus Koop-Kameraden und Kameradinnen hilft euch dabei, die Barrieren um das Dorf aufzubauen und in dieser weitl\u00e4ufigen und wundersch\u00f6nen Welt nach Sch\u00e4tzen zu suchen\u00a0\u2013 w\u00e4hrend der Untergang unaufhaltsam n\u00e4her r\u00fcckt.<br \/>\r\n<br \/>\r\nDavon sollte sich euer Stamm aber nicht abhalten lassen, die spa\u00dfigste Apokalypse aller Zeiten zu erleben.<br \/>\r\n\u201e\u00dcber- und erlebt\u201c auf Wikingerart, in Tribes of Midgard, dem actiongeladenen Mehrspieler-Survival-RPG von riesigen Ausma\u00dfen.<br \/>\r\n<br \/>\r\n\u00a0Erkunde dunkle H\u00f6hlen, erlege legend\u00e4re Bestien und baue dein Dorf aus, w\u00e4hrend du die fantastischen, prozedural-generierten L\u00e4nder bereist, im Kampf gegen Ragnar\u00f6k.<br \/>\r\n<br \/>\r\n\u00a0Besch\u00fctze den Spross von Yggdrasil vor n\u00e4chtlichen Angriffen der Helmonster und arbeite mit deinem Stamm zusammen, um die Bedrohung der J\u00f6tnar abzuwehren, epischer Riesen, die den Spross zerschmettern wollen\u00a0\u2013 und am besten das ganze Dorf drum herum noch dazu.<br \/>\r\n<br \/>\r\n\u00a0W\u00e4hle deine Klasse und k\u00e4mpfe dich durch die Wildnis auf der Suche nach Material f\u00fcr epische R\u00fcstungen und m\u00e4chtige Waffen. Setze beeindruckende F\u00e4higkeiten ein und baue die Verteidigungsanlagen des Dorfs auf, um deine Feinde zu \u00fcberrumpeln.<br \/>\r\n<br \/>\r\n\u00a0Wenn die Riesen auftauchen, muss das ganze Dorf zusammenhalten! Erlebe dein Abenteuer in Midgard allein oder mit deinem Stamm aus bis zu 10 Spielern im PvE-Koop-Modus online. Beweise deine Wikingerst\u00e4rke in verschiedenen Spielmodi und entdecke deinen Spielstil f\u00fcr dich.<br \/>\r\n<br \/>\r\n\u00a0\u00dcber das Jahr hinweg kannst du bei zeitlich begrenzten saisonalen Events noch gr\u00f6\u00dfere Herausforderungen meisten und dir Sch\u00e4tze f\u00fcr das Endgame in Midgard sichern. Nutze neue Wege, um im Spiel voranzuschreiten und Belohnungen freizuschalten f\u00fcr alle deine Spielweisen.","platforms":"1","platform":"Steam","movement":-1},"652":{"category":"[\"29\",\"27\"]","prod_id":"652","type":"Playstation","price":"17.99","discount":"10","retail":"20.00","p_edition_id":"96","avail_date":null,"preorder":"0","thumbzone":"3.33966","is_dlc":"0","ean":null,"brand":"Sony","name":"PlayStation Store Guthaben-Aufstockung 20\u20ac","small_name":"PlayStation Store Guthaben-Aufstockung 20\u20ac","seo_name":"playstation-store-guthaben-aufstockung-20e","description":"Auch ohne Kreditkarte kannst du dein PlayStation Network-Guthaben ganz leicht aufstocken. PlayStation Network Cards (PSN) sind eine gro\u00dfartige M\u00f6glichkeiten, das PlayStation Network-Guthaben ganz bequem aufzuladen. Dazu erwirbst du einfach eine PSN Card, gibst den 12-stelligen Code ein und kannst anschlie\u00dfend fantastische Inhalte downloaden.<br \/>\r\n<br \/>\r\nAnleitung zum Einl\u00f6sen:<br \/>\r\n<br \/>\r\n- Besuche den PlayStation-Store oder den Online-Store.<br \/>\r\n- Melde dich bei deinem Sony Entertainment Network-Konto (vorher als PlayStation Store-Konto bekannt) an. Wenn du noch kein Konto besitzt, kannst du dir eines erstellen unter eu.playstation.com\/registration.<br \/>\r\n- W\u00e4hle die Option \u201cCodes einl\u00f6sen\u201d. (Bei PS Vita musst du zuerst das Optionen-Symbol unten am Bildschirm antippen.)<br \/>\r\n- Gib den 12-stelligen Gutschein-Code ein und w\u00e4hle \u201cFortfahren\u201d.<br \/>\r\n- Folge den Anweisungen auf dem Bildschirm, um deinen Gutschein-Code einzul\u00f6sen.<br \/>\r\nF\u00fcr Gutschein-Codes ist die Gro\u00df- und Kleinschreibung ausschlaggebend. Sie m\u00fcssen also genau so eingegeben werden wie dargestellt.","platforms":"7,8,9","platform":"Playstation","movement":1},"4211":{"category":"[\"1\",\"4\",\"24\",\"8\",\"23\",\"11\"]","prod_id":"4211","type":"Rockstar","price":"9.35","discount":"73","retail":"35.00","p_edition_id":"218","avail_date":"1428969600","preorder":"0","thumbzone":null,"is_dlc":"0","ean":null,"brand":"Rockstar Games","name":"Grand Theft Auto V: Premium Online Edition","small_name":"GTA 5 Premium Online Edition","seo_name":"grand-theft-auto-v-premium-online-edition","description":"Grand Theft Auto V: Premium Online Edition enth\u00e4lt :<br \/>\r\n<br \/>\r\n- das komplette Erlebnis der Grand Theft Auto V-Geschichte, die sich st\u00e4ndig weiterentwickelnde Welt von Grand Theft Auto Online, alle bisherigen Gameplay- und Inhaltsverbesserungen wie Doomsday Hit, Waffenhandel, Smuggler's Run, Bikers und mehr.<br \/>\r\n<br \/>\r\nEbenfalls enthalten ist das Criminal Enterprise Starter Pack, der schnellste Weg zur St\u00e4rkung krimineller Imperien f\u00fcr neue GTA Online-Spieler mit den aufregendsten und beliebtesten Inhalten, sowie ein Bonus in H\u00f6he von 1.000.000 US-Dollar, den sie f\u00fcr GTA Online ausgeben k\u00f6nnen. Im Wert von GTA$ im Wert von \u00fcber 10.000.000 $.<br \/>\r\n<br \/>\r\nGrand Theft Auto V: Premium Online Edition f\u00fcr PC wurde zusammen mit der Einzelspielerversion des Spiels ver\u00f6ffentlicht. Das Unternehmen war ehrgeizig und am Anfang war das Spiel das Hauptproblem vieler Klagen \u00fcber Probleme mit der Spielbarkeit, Datenverlust und eine Reihe anderer Probleme. Die Entwickler machten sich jedoch an die Arbeit und ver\u00f6ffentlichten bald Updates und Patches, mit denen diese Probleme behoben wurden. Au\u00dferdem boten sie mehr Missionen und ein besseres Gameplay.<br \/>\r\n<br \/>\r\n<h2>\u00dcber das Spiel<\/h2><br \/>\r\nIn der Einzelspielerversion des Spiels [Insert link to Grand Theft Auto V for PC] sind die Charaktere an eine lineare Handlung gebunden, die ziemlich einfach zu verarbeiten ist. Dies ist in der Online-Version nicht der Fall, die mehr Freiheit bietet - und dies kann manchmal zu mehr Komplexit\u00e4t f\u00fchren -, um herauszufinden und auszuw\u00e4hlen, welche Missionen Du abschlie\u00dfen m\u00f6chtest, anstatt alle Szenarien anzukreuzen.<br \/>\r\n<br \/>\r\nDie Online-Umgebung ist identisch mit der Einzelspielerversion, den fiktiven St\u00e4dten San Andreas und Los Santos in Blaine County, mit einer vollst\u00e4ndig realisierten Welt und vielen Aktivit\u00e4ten zum Ausprobieren und Geb\u00e4ude und Stra\u00dfen zum Erkunden.<br \/>\r\n<br \/>\r\nIn der Online-Version des Spiels k\u00f6nnen bis zu 30 Spieler kooperativ oder konkurrierend gegeneinander k\u00e4mpfen, um kurzfristig die Oberhand zu behalten. Du kannst Crews beitreten, die aus Fremden bestehen, oder Dich mit Freunden zusammenschlie\u00dfen, indem Du eine eigene geschlossene Crew bildest.<br \/>\r\n<br \/>\r\n<h3>Keine Verz\u00f6gerungsprobleme<\/h3><br \/>\r\nWenn so viele Leute gleichzeitig auf die Server zugreifen, kann es zu Verz\u00f6gerungen kommen, w\u00e4hrend sich alle anmelden und sich auf das Spielen vorbereiten. Tats\u00e4chlich ist das Anmelden schnell und einfach und Verz\u00f6gerungen scheinen sehr selten zu sein, was eine angenehme \u00dcberraschung ist, wenn man bedenkt, wie viele Rohdaten von nur einem Spieler gestreamt werden, egal, drei\u00dfig! Nat\u00fcrlich musst Du \u00fcber schnelles Breitband-Internet und einen Spielecomputer von relativ guter Qualit\u00e4t verf\u00fcgen, um die beste Erfahrung mit diesem Spiel zu machen.<br \/>\r\n<br \/>\r\nBei der ersten Anmeldung wird der Charakter des Spielers am Flughafen abgeholt und mit einem Fahrzeug und einer Waffe ausgegeben. Dann gibt es ein einst\u00fcndiges Tutorial, in dem Du viele n\u00fctzliche Tipps dazu findest, wie Du die Welt erkundest, Dich Koops oder Crews anschlie\u00dft und das Spielerlebnis optimal nutzen kannst.<br \/>\r\n<br \/>\r\n<h3>So viel zu tun!<\/h3><br \/>\r\nDie meisten Multiplayer-Spiele sind durch die schiere Anzahl der Spieler begrenzt, wobei jeder in vorgegebene Pfade und Handlungsstr\u00e4nge getrieben wird. Dieses jedoch nicht. Dies ist im Grunde genommen eine riesige, offene Welt, in der Du und Deine Teamkollegen \u00fcberall im fiktiven Blaine County herumstreifen kannst, um Geb\u00e4ude und Features zu erkunden oder auf der Stra\u00dfe oder mit Waffen dagegen anzuk\u00e4mpfen.<br \/>\r\n<br \/>\r\nSpieler k\u00f6nnen w\u00e4hlen zwischen:<br \/>\r\n<br \/>\r\n<li>Ein Drive-by-Shooting auf eine Menge Feinde ausf\u00fchren<\/li><br \/>\r\n<li>Einen Tieffliegerangriff ausf\u00fchren, indem Du ein Flugzeug stiehlst und dann einen Drive-by in der Luft ausf\u00fchrst<\/li><br \/>\r\n<li>Raub\u00fcberf\u00e4lle - aber keine gew\u00f6hnlichen Raub\u00fcberf\u00e4lle! Die \u00dcberf\u00e4lle in diesem Spiel erfordern mehrere Teamkollegen und folgen mehreren Phasen, wobei eine sorgf\u00e4ltige Planung erforderlich ist, um sicherzustellen, dass alle Phasenanforderungen erf\u00fcllt sind, damit der \u00dcberfall erfolgreich wird.<\/li><br \/>\r\n<li>Todeskampf \u2013 k\u00e4mpfe bis zum Tod, bis nur noch Du \u00fcberlebst, K\u00f6nig der Welt!<\/li><br \/>\r\n<li>Kooperative Missionen - Arbeite mit Teamkollegen zusammen, um Missionen durchzuf\u00fchren, die f\u00fcr eine Person allein zu gro\u00df w\u00e4ren <\/li><br \/>\r\n<li>Rennen - fahr mit Deinen Freunden oder Feinden Land-, Luft- und Seerennen mit allen Fahrzeugen, die Du im Laufe des Spiels finden und erwerben kannst.<\/li><br \/>\r\nGrand Theft Auto V: Premium Online Edition f\u00fcr PC ist bei Instant Gaming zum Bruchteil des Verkaufspreises erh\u00e4ltlich. Du erh\u00e4ltst einen offiziellen Schl\u00fcssel und kannst das Spiel sofort spielen. Play smart. Pay less. ","platforms":"1","platform":"Rockstar","movement":-1},"8968":{"category":"[\"15\"]","prod_id":"8968","type":"Origin","price":"27.99","discount":"30","retail":"39.99","p_edition_id":"12","avail_date":"1626912000","preorder":"0","thumbzone":"0.15949","is_dlc":"1","ean":null,"brand":"Electronic Arts","name":"Die Sims 4 Landhaus-Leben","small_name":"Die Sims4 Landhaus-Leben","seo_name":"die-sims-4-landhaus-leben","description":"Die Sims 4: Cottage Living f\u00fcr PC ist das elfte Erweiterungspaket f\u00fcr das allseits beliebte Spiel Sims 4, nicht mitgez\u00e4hlt die achtzehn \"Material\"-Packs und zehn Spiel-Packs und vier Kit-Packs, die ver\u00f6ffentlicht wurden, um die Spieler mit ihren Sims bei Laune zu halten. Dieses Mal dreht sich bei deinen Sims alles um das ruhige Landleben. <br \/>\r\n<br \/>\r\n<h3>\u00dcber das Spiel<\/h3><br \/>\r\nDas brandneue Dorf Henford on Bagley (neu im Spiel zumindest, es ist ein alteingesessenes, altmodisches englisches Dorf, das es schon seit Tausenden von Jahren gibt, oder geben w\u00fcrde, wenn es nicht fiktiv w\u00e4re) f\u00fchrt deine Sims in die kleine Subsistenzform des Landlebens ein. <br \/>\r\n<br \/>\r\nDeine Sims k\u00f6nnen so unterschiedliche Feldfr\u00fcchte wie K\u00fcrbisse, Auberginen und Wassermelonen anbauen und Tiere wie Lamas, K\u00fche, H\u00fchner und Kaninchen z\u00fcchten. Letztere m\u00fcssen allerdings vor den \u00f6rtlichen F\u00fcchsen besch\u00fctzt werden, also rechne nicht damit, dass das Landleben zu sanft und einfach ist!<br \/>\r\n<br \/>\r\nDie \u00f6rtliche Kneipe, das Gnome Arms, l\u00e4dt deine Sims zu einem gem\u00fctlichen Bierchen nach einem anstrengenden Arbeitstag ein. Oder vielleicht m\u00f6chten sie lieber einen Spaziergang um die Dorfwiese machen oder am Bach entlang schlendern, der durch das Dorf flie\u00dft? Die mutigeren Sims m\u00f6chten vielleicht ein freches Bad in der Wasserstelle nehmen, einem beliebten Ort zum Schwimmen. <br \/>\r\n<br \/>\r\nDu kannst dein Vieh oder dein bestes Gem\u00fcse bei der w\u00f6chentlichen Finchwick Fair einreichen und sehen, wie du dich mit dem Rest des Dorfes misst! Ein blaues Band f\u00fcr hervorragende Leistungen wartet auf dich, zusammen mit Auszeichnungen und Lob von deinen Nachbarn - zumindest von denen, die nicht vor Neid platzen!<br \/>\r\n<br \/>\r\nHol dir Milch von K\u00fchen, Wolle von deinen Lamas und Eier von deinen H\u00fchnern. Oder, wenn dir das zu harmlos vorkommt, versuche, die wilden Kaninchen und V\u00f6gel in der Umgebung zu z\u00e4hmen, die dich besuchen und dir coole kleine Geschenke machen werden - au\u00dfer den F\u00fcchsen, die, wie oben erw\u00e4hnt, deine Eier klauen und anderen Unfug anstellen werden! <br \/>\r\n<br \/>\r\n<h2>Was gibt's Neues?<\/h2><br \/>\r\nIn diesem Spiel bringt es dir Punkte ein, wenn du gesellig bist, denn die Einheimischen sch\u00e4tzen es, wenn du ihnen hilfst und Besorgungen f\u00fcr sie erledigst, und das ist gut f\u00fcr die Interaktion deiner Sims im Dorf. Du kannst Punkte und Geld verdienen und wertvolle Informationen erhalten, indem du diese Besorgungen erledigst, also mach dir die extrovertierte Seite deiner Sims zu eigen und bring sie nach drau\u00dfen! <br \/>\r\n<br \/>\r\nDie Gartenarbeit und das Kochen sind bereits in anderen Sims 4-Erweiterungspaketen enthalten, wenn auch nat\u00fcrlich mit entsprechenden Verbesserungen, wie z. B. dem Anbau von wirklich gro\u00dfem Gem\u00fcse und dem Unterrichten von Kindern im Garten. Ja, man kann die Kinder drau\u00dfen arbeiten lassen und Geld f\u00fcr einen verdienen lassen! Aber das gro\u00dfe Alleinstellungsmerkmal dieses Spiels ist nat\u00fcrlich die Landwirtschaft, um die Sims-Fans schon lange gebettelt haben!<br \/>\r\n<br \/>\r\nSchaut euch die \"Simply Living\"-Herausforderungen an, die zur Sparsamkeit ermutigen, wie z.B. nur Zutaten zu verwenden, die ihr bereits habt, und Abfall zu reduzieren, wo immer ihr k\u00f6nnt. Wenn ihr dieses Spiel ausprobiert, solltet ihr euch nicht zu sehr \u00fcber Teile des Spiels \u00e4rgern, die lebenslangen Sims 4-Fans bekannt vorkommen: Es gibt diesmal viele neue Herausforderungen und verschiedene Mechanismen zu meistern! Ihr k\u00f6nnt zus\u00e4tzliche Ernten und Ressourcen in der Stadt verkaufen, um etwas zus\u00e4tzliches Geld zu verdienen. <br \/>\r\n<br \/>\r\n<h2>Just for Fun<\/h2><br \/>\r\nMan kann seine Tiere auf verschiedene Arten individualisieren. Mal sehen: <br \/>\r\n<br \/>\r\n<li>Die K\u00fche lassen sich in verschiedenen Farbt\u00f6nen f\u00e4rben. Sie k\u00f6nnen sogar mehrfarbig sein<\/li><br \/>\r\n<li>Die Lamas lassen sich mit niedlichen, gemusterten Pullovern einkleiden. Nichts, was so niedlich ist, k\u00f6nnte spucken... oder doch? <\/li><br \/>\r\n<li>Die besten britischen Kaninchen werden in der h\u00f6flichen Gesellschaft nie ohne ihre schicken Westen gesehen<\/li><br \/>\r\n<li>H\u00fchner m\u00f6gen aus der N\u00e4he m\u00fcrrisch aussehen, aber selbst sie lieben es, ihre h\u00fcbschen Hauben zu tragen, um die Sonne abzuhalten<\/li><br \/>\r\nOh, und \u00fcbrigens... die m\u00fcrrische Mrs. Crumplebottom ist zur\u00fcck! F\u00fcr diejenigen, die sie nicht kennen: Sie ist eine sehr pr\u00fcde alte Dame, die PDAs wirklich nicht mag! Lass deine Sims vor ihr k\u00fcssen und kuscheln und schau, ob sie sich beruhigt hat!<br \/>\r\n<br \/>\r\nDie Sims 4: Cottage Living f\u00fcr PC kann bei Instant Gaming f\u00fcr einen Bruchteil des Verkaufspreises gekauft werden. Du erh\u00e4ltst einen offiziellen Key und kannst das Spiel in Sekundenschnelle spielen. Play smart. Pay less.<br \/>\r\n<br \/>\r\n","platforms":"1,2","platform":"Origin","movement":-1},"937":{"prod_id":"937","price":"3.40","discount":82,"retail":"19.99","type":"Steam","category":"[1,4,32,11,47]","thumbzone":null,"name":"Kyn","small_name":"Kyn","seo_name":"kyn","platforms":"1","old_price":"4.25","scheduled_to_date":"1628459999","platform":"Steam","stock":1,"new_discount":82,"promo":1},"7011":{"id":"533","prod_id":"7011","scheduled_from_date":"1628028000","discount_price":"13.99","user_id":"517869","scheduled_to_date":"1628632799","name":"Anno History Collection","seo_name":"anno-history-collection","small_name":"Anno History Collection","from_date":"04-08-2021","to_date":"10-08-2021","type":"Uplay","old_price":"16.98","retail":"39.99","category":"[\"15\",\"17\"]","new_discount":"65","normal_discount":"58","price":"13.99","is_active":"0","platforms":"1","platform":"Uplay","stock":1,"promo":1,"discount":65},"1028":{"id":"534","prod_id":"1028","scheduled_from_date":"1628200800","discount_price":"6.41","user_id":"517869","scheduled_to_date":"1628805599","name":"7 Days to Die (Early Access)","seo_name":"7-days-to-die-early-access","small_name":"7 Days to Die","from_date":"06-08-2021","to_date":"12-08-2021","type":"Steam","old_price":"7.09","retail":"22.99","category":"[1,4,32,11,15,17,37,53,9,47,50,23]","new_discount":"72","normal_discount":"69","price":"6.41","is_active":"0","platforms":"1,2,3,13","platform":"Steam","stock":1,"promo":1,"discount":72}};
+			window.stopSlide = false;
+			window.nextSlide = function() {
+				var nextS = $('.fadein > div:first-child').fadeOut(400, function() { $(this).detach().appendTo('.fadein')}).next('div').fadeIn();
+				fillGtext(products[nextS.data('pid')], '.gtext2');
+				$('.gtext').fadeOut({ complete: function() { $(this).attr('class', 'gtext2'); } });
+				$('.gtext2').fadeIn({ complete: function() { $(this).attr('class', 'gtext'); } });
+			}
+			$('.fadein > div:first-child').show();
+			fillGtext(products[$('.fadein > div:first-child').data('pid')], '.gtext');
+						setInterval(function() {
+				if (window.stopSlide == false && !window.forceStopSlide) {
+					window.nextSlide();
+				}
+			}, 5000);
+						$('body').on('mouseenter', function() {
+				window.stopSlide = true;
+			}).on('mouseleave', function() {
+				window.stopSlide = false;
+			});
+
+			// PROMO TIMER
+			var midnight = new Date();
+			midnight.setHours(24);
+			midnight.setMinutes(0);
+			midnight.setSeconds(0);
+			midnight.setMilliseconds(0);
+			midnight = midnight.getTime();
+
+			var ctr = $('#ig-promo-counter');
+			if (ctr.length > 0) {
+				var pad = function(nb) {
+					return (nb < 10 ? '0' + nb : nb);
+				}
+
+				setInterval(function() {
+					var cur_date = new Date().getTime();
+					var diff = (midnight - cur_date) / 1000;
+
+					var hours_left = parseInt(diff / 3600);
+					diff = diff % 3600;
+
+					var minutes_left = parseInt(diff / 60);
+					diff = parseInt(diff % 60);
+
+					if (diff < 0) {
+						$('#ig-promo-counter').parent().parent().remove();
+						return;
+					}
+
+					ctr.text(pad(hours_left) + ':' + pad(minutes_left)).append('<span>:' + pad(diff) + '</span>');
+				}, 1000);
+			}
+		});
+		</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"548e8d9732","applicationID":"6048502","transactionName":"ZFMHY0RUWxcAV0VbCV0ZJkJFQVoJTlVVQQ==","queueTime":0,"applicationTime":28,"atts":"SBQEFQxOSBk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+</body></html>
